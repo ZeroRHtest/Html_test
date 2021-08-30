@@ -36,7 +36,9 @@ body{
 
 .nav_data{
     background-color: rgba(128, 128, 128, 0.315);
-    
+    height: 30px;
+    font-size: 20px;
+    align-items: center;
 }
 .nav_pogoda{
     background-color: rgba(0, 216, 0, 0.315);
@@ -60,9 +62,12 @@ body{
     height: 90px;
     border-radius: 20px;
 }
-
+.main_funkcje{
+    margin: auto;
+}
 .footer{
     
     background-color: black;
     height: 20%;
 }
+

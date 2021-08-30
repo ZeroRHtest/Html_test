@@ -7,14 +7,20 @@ html(lang='pl-PL')
         link( rel='stylesheet' href='./style.css')
         link(href="https://fonts.googleapis.com/css2?family=Raleway&display=swap" rel="stylesheet")
         link(rel="stylesheet", href="https://fonts.googleapis.com/css2?family=Srisakdi:wght@700&display=swap")
+        
+        <script src="./test.js"></script>
 
+                            
 
-    body
+          
+ 
+    body(onload = "odliczanie();")
         .nav
             
             .nav_box 
                 .nav_data
-                    p DATA I GODZINA
+                    div#zegar
+
                 .nav_pogoda
                     p OBRAZEK
                 .nav_info
@@ -26,5 +32,8 @@ html(lang='pl-PL')
             .main_lista
             .main_funkcje 
                 .f_test
+                    input(type='text' id="pole")
+                    input(type="submit" value='Sprawdź' onclick="sprawdz()")
+                    #wynik
         .footer 
             .footer_app 
